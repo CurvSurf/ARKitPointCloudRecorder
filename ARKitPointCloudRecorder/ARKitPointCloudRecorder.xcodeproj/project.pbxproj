@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B9A5D3D2255C72100102ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D3C2255C72100102ED0 /* AppDelegate.swift */; };
+		2B9A5D422255C72100102ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9A5D402255C72100102ED0 /* Main.storyboard */; };
+		2B9A5D442255C72300102ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9A5D432255C72300102ED0 /* Assets.xcassets */; };
+		2B9A5D472255C72300102ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9A5D452255C72300102ED0 /* LaunchScreen.storyboard */; };
+		2B9A5D4F2255C99E00102ED0 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D4E2255C99E00102ED0 /* Shaders.metal */; };
+		2B9A5D522255C9EA00102ED0 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D512255C9EA00102ED0 /* Renderer.swift */; };
+		2B9A5D552255CA8E00102ED0 /* ARPointRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D542255CA8E00102ED0 /* ARPointRecorder.mm */; };
+		2B9A5D592255CAF000102ED0 /* PointManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D572255CAF000102ED0 /* PointManager.cpp */; };
+		2B9A5D5B2255F9AC00102ED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D5A2255F9AC00102ED0 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B9A5D392255C72100102ED0 /* ARKitPointCloudRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitPointCloudRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9A5D3C2255C72100102ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B9A5D412255C72100102ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B9A5D432255C72300102ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B9A5D462255C72300102ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B9A5D482255C72300102ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B9A5D4E2255C99E00102ED0 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		2B9A5D502255C9BD00102ED0 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		2B9A5D512255C9EA00102ED0 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		2B9A5D532255CA8E00102ED0 /* ARKitPointCloudRecorder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKitPointCloudRecorder-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B9A5D542255CA8E00102ED0 /* ARPointRecorder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARPointRecorder.mm; sourceTree = "<group>"; };
+		2B9A5D562255CAA700102ED0 /* ARPointRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARPointRecorder.h; sourceTree = "<group>"; };
+		2B9A5D572255CAF000102ED0 /* PointManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = PointManager.cpp; sourceTree = "<group>"; };
+		2B9A5D582255CAF000102ED0 /* PointManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PointManager.hpp; sourceTree = "<group>"; };
+		2B9A5D5A2255F9AC00102ED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B9A5D362255C72100102ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B9A5D302255C72100102ED0 = {
+			isa = PBXGroup;
+			children = (
+				2B9A5D3B2255C72100102ED0 /* ARKitPointCloudRecorder */,
+				2B9A5D3A2255C72100102ED0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B9A5D3A2255C72100102ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B9A5D392255C72100102ED0 /* ARKitPointCloudRecorder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B9A5D3B2255C72100102ED0 /* ARKitPointCloudRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				2B9A5D3C2255C72100102ED0 /* AppDelegate.swift */,
+				2B9A5D5A2255F9AC00102ED0 /* ViewController.swift */,
+				2B9A5D402255C72100102ED0 /* Main.storyboard */,
+				2B9A5D432255C72300102ED0 /* Assets.xcassets */,
+				2B9A5D452255C72300102ED0 /* LaunchScreen.storyboard */,
+				2B9A5D482255C72300102ED0 /* Info.plist */,
+				2B9A5D4E2255C99E00102ED0 /* Shaders.metal */,
+				2B9A5D502255C9BD00102ED0 /* ShaderTypes.h */,
+				2B9A5D512255C9EA00102ED0 /* Renderer.swift */,
+				2B9A5D562255CAA700102ED0 /* ARPointRecorder.h */,
+				2B9A5D542255CA8E00102ED0 /* ARPointRecorder.mm */,
+				2B9A5D532255CA8E00102ED0 /* ARKitPointCloudRecorder-Bridging-Header.h */,
+				2B9A5D582255CAF000102ED0 /* PointManager.hpp */,
+				2B9A5D572255CAF000102ED0 /* PointManager.cpp */,
+			);
+			path = ARKitPointCloudRecorder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B9A5D382255C72100102ED0 /* ARKitPointCloudRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B9A5D4B2255C72300102ED0 /* Build configuration list for PBXNativeTarget "ARKitPointCloudRecorder" */;
+			buildPhases = (
+				2B9A5D352255C72100102ED0 /* Sources */,
+				2B9A5D362255C72100102ED0 /* Frameworks */,
+				2B9A5D372255C72100102ED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitPointCloudRecorder;
+			productName = ARKitPointCloudRecorder;
+			productReference = 2B9A5D392255C72100102ED0 /* ARKitPointCloudRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B9A5D312255C72100102ED0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CurvSurf;
+				TargetAttributes = {
+					2B9A5D382255C72100102ED0 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 2B9A5D342255C72100102ED0 /* Build configuration list for PBXProject "ARKitPointCloudRecorder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B9A5D302255C72100102ED0;
+			productRefGroup = 2B9A5D3A2255C72100102ED0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B9A5D382255C72100102ED0 /* ARKitPointCloudRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B9A5D372255C72100102ED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9A5D472255C72300102ED0 /* LaunchScreen.storyboard in Resources */,
+				2B9A5D442255C72300102ED0 /* Assets.xcassets in Resources */,
+				2B9A5D422255C72100102ED0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B9A5D352255C72100102ED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9A5D5B2255F9AC00102ED0 /* ViewController.swift in Sources */,
+				2B9A5D592255CAF000102ED0 /* PointManager.cpp in Sources */,
+				2B9A5D552255CA8E00102ED0 /* ARPointRecorder.mm in Sources */,
+				2B9A5D522255C9EA00102ED0 /* Renderer.swift in Sources */,
+				2B9A5D4F2255C99E00102ED0 /* Shaders.metal in Sources */,
+				2B9A5D3D2255C72100102ED0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B9A5D402255C72100102ED0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B9A5D412255C72100102ED0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B9A5D452255C72300102ED0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B9A5D462255C72300102ED0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B9A5D492255C72300102ED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B9A5D4A2255C72300102ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B9A5D4C2255C72300102ED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ARKitPointCloudRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.curvsurf.ARKitPointCloudRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitPointCloudRecorder/ARKitPointCloudRecorder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B9A5D4D2255C72300102ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ARKitPointCloudRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.curvsurf.ARKitPointCloudRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitPointCloudRecorder/ARKitPointCloudRecorder-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B9A5D342255C72100102ED0 /* Build configuration list for PBXProject "ARKitPointCloudRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9A5D492255C72300102ED0 /* Debug */,
+				2B9A5D4A2255C72300102ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B9A5D4B2255C72300102ED0 /* Build configuration list for PBXNativeTarget "ARKitPointCloudRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9A5D4C2255C72300102ED0 /* Debug */,
+				2B9A5D4D2255C72300102ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B9A5D312255C72100102ED0 /* Project object */;
+}
